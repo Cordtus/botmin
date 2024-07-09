@@ -6,9 +6,11 @@ I understand the requirement. Here's the corrected logic to ensure the command m
 yarn add telegraf dotenv
 ```
 
-2. **Create a `.env` file in the same directory as your `bot.js` file and add your bot token:**
+2. **Create a `.env` file in the same directory as your `bot.js` file and add your bot token as well as the group id and the users who can command the bot:**
 
 ```shell
+ADMIN_USER_IDS=1692222985,6194117745,1289633285
+GROUP_ID=-1001806025111
 BOT_TOKEN=your_bot_token_here
 ```
 
