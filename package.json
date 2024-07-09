@@ -1,0 +1,7 @@
+{
+  "name": "botmin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "cordtus <cordtus@gmail.com>",
+  "license": "MIT"
+}
