@@ -1,5 +1,3 @@
-I understand the requirement. Here's the corrected logic to ensure the command message is deleted after processing the reply and performing the actions:
-
 1. **Install the necessary packages:**
 
 ```shell
