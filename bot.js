@@ -1,14 +1,11 @@
 require('dotenv').config();
-const { Telegraf } = require('telegraf');
 
-// Load bot token from .env file
+const adminUserIds = process.env.ADMIN_USER_IDS.split(',').map(id => parseInt(id, 10));
+const groupId = parseInt(process.env.GROUP_ID, 10);
 const botToken = process.env.BOT_TOKEN;
 
-// Check if bot token is provided
-if (!botToken) {
-    throw new Error('Bot token is missing. Please add it to the .env file.');
-}
-
+// Initialize your bot using the botToken
+const { Telegraf } = require('telegraf');
 const bot = new Telegraf(botToken);
 
 // Bot permissions list - Shrimprokkoli, M, Tousuke
