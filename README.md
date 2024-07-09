@@ -16,6 +16,8 @@ BOT_TOKEN=your_bot_token_here
 
 ```bash
 node bot.js
+```
+
 ### Explanation:
 1. **Environment Variables**: The `dotenv` package is used to load environment variables from the `.env` file.
 2. **Bot Token**: The bot token is loaded from the `.env` file using `process.env.BOT_TOKEN`.
@@ -31,4 +33,3 @@ node bot.js
    - `#x`: Deletes the replied-to message, kicks the user from the chat.
 8. **Non-admin Handling**: If the user issuing the command is not an admin, the bot replies with "Only admins can use the chat controller".
 9. **Command Message Deletion**: The command message is deleted after processing.
-```
